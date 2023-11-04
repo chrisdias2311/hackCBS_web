@@ -10,7 +10,7 @@
 .pharma_right_component{
     width: 73.5%;
 }
-.top{
+.pharmd_top{
     background-color: #1D242E;
     height: 60px;
     display: flex;
@@ -18,13 +18,13 @@
     justify-content: center;
     color: white;
 }
-.top img{
+.pharmd_top img{
     width: 40px;
     height: 40px;
     margin-right: 30px;
 
 }
-.top h2{
+.pharmd_top h2{
     margin: 0px;
 }
 /* .bottom{

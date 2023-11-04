@@ -1,7 +1,7 @@
 import React from 'react'
-import './DoctorDashboard.css'
+import '../DoctorDashboard.css'
 
-import PharmacyLogo from '../pharmacy/images/pharmacy_logo.jpg'
+import PharmacyLogo from '../../pharmacy/images/pharmacy_logo.jpg'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import AssessmentIcon from '@mui/icons-material/Assessment';
@@ -9,10 +9,11 @@ import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 import { useParams, useNavigate } from 'react-router-dom';
-import Appointments from './components/Appointments';
+import Appointments from '../components/Appointments';
+import AttendPatientComponent from './AttendPatientComponent';
 
 
-function DoctorDashboard() {
+function AttendPatient() {
   const params = useParams();
   const navigate = useNavigate();
 
@@ -88,10 +89,10 @@ function DoctorDashboard() {
         </div>
       </div>
       <div className='pharma_right_component'>
-        <Appointments />
+        <AttendPatientComponent/>
       </div>
     </div>
   )
 }
 
-export default DoctorDashboard
+export default AttendPatient

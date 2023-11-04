@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import PharmacyDashboard from './pages/pharmacy/PharmacyDashboard';
 import HospitalDashboard from './pages/hospital/HospitalDashboard';
 import DoctorDashboard from './pages/doctor/DoctorDashboard';
+import AttendPatient from './pages/doctor/components/AttendPatient';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/hospital" element={<HospitalDashboard />} />
         <Route path="/pharmacydashboard/:ext" element={<PharmacyDashboard />} />
         <Route path="/doctordashboard" element={<DoctorDashboard />} />
+        <Route path="/doctordashboard/attendpatient" element={<AttendPatient />} />
       </Routes>
       </BrowserRouter>
     </div>

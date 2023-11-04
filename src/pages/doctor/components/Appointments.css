@@ -1,0 +1,36 @@
+.appointments_component{
+    background-color: rgb(225, 237, 237);
+}
+.appointments_component h1{
+    margin: 0px;
+}
+.appointments_header{
+    text-align: left;
+    padding-left: 25px;
+}
+.appointment_cards{
+    padding-left: 25px;
+
+}
+.appointment_card{
+    background-color: white;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    display: flex;
+}
+.appointment_card h2{
+    margin: 0px;
+}
+.date_sec{
+    display: flex;
+    align-items: center;    
+}
+.date_sec h5{
+    margin: 0px;
+    margin-right: 20px;
+}

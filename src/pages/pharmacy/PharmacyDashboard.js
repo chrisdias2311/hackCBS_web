@@ -30,7 +30,7 @@ function PharmacyDashboard() {
     return (
         <div className='pharmacy_dashboard'>
             <div className='pharma_appbar'>
-                <div className='top'>
+                <div className='pharmd_top'>
                     <img src={PharmacyLogo}></img>
                     <h2>Pharma One</h2>
                 </div>
