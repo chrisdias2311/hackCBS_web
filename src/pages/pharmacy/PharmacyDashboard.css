@@ -1,0 +1,52 @@
+.pharmacy_dashboard{
+    display: flex;
+    height: 750px;
+}
+.pharma_appbar{
+    background-color: #283342;
+    width: 25%;
+    height: 130%;
+}
+.pharma_right_component{
+    width: 73.5%;
+}
+.top{
+    background-color: #1D242E;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.top img{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+
+}
+.top h2{
+    margin: 0px;
+}
+/* .bottom{
+    padding-left: 25px;
+} */
+.element{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 25px;
+}
+.element:hover{
+    cursor: pointer;
+}
+
+.selected_element{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 25px;
+    background-color: #009099;
+}
+.selected_element:hover{
+    cursor: pointer;
+}

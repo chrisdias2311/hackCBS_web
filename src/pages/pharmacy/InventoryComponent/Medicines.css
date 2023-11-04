@@ -1,0 +1,17 @@
+.medicines_container{
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.med_inventory_list{
+    display: flex;
+}
+.add_medicine_button{
+    padding-left: 300px;
+}
+
+
+
+/* Orange Color code  */
+/* F0483E */ 
