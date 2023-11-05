@@ -1,0 +1,27 @@
+.add_medicine_card{
+    background-color: white;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.add_medicine_row_1{
+    display: flex   ;
+}
+
+.check_box_component{
+    margin-right: 20px;
+}
+
+/* selectedTimes: {
+    beforeBreakfast: false,
+    afterBreakfast: false,
+    beforeLunch: false,
+    afterLunch: false,
+    beforeDinner: false,
+    afterDinner: false,
+}, */

@@ -50,7 +50,7 @@ function DoctorDashboard() {
                 <h3>Appointments</h3>
               </div>
           }
-
+{/* 
           {
             params.ext === 'inventory' ?
               <div className='selected_element'>
@@ -74,7 +74,7 @@ function DoctorDashboard() {
                 <AssessmentIcon style={{ marginRight: '20px' }} />
                 <h3>Reports</h3>
               </div>
-          }
+          } */}
 
 
           <div className='element'>

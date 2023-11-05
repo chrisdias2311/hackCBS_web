@@ -6,6 +6,7 @@ import PharmacyDashboard from './pages/pharmacy/PharmacyDashboard';
 import HospitalDashboard from './pages/hospital/HospitalDashboard';
 import DoctorDashboard from './pages/doctor/DoctorDashboard';
 import AttendPatient from './pages/doctor/components/AttendPatient';
+import PharmacysignUp from './pages/pharmacy/PharmacysignUp';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/pharmacydashboard/:ext" element={<PharmacyDashboard />} />
         <Route path="/doctordashboard" element={<DoctorDashboard />} />
         <Route path="/doctordashboard/attendpatient" element={<AttendPatient />} />
+
+        <Route path="/pharmacysignup" element={<PharmacysignUp />} />
       </Routes>
       </BrowserRouter>
     </div>

@@ -51,7 +51,7 @@ function AttendPatient() {
                 <h3>Appointments</h3>
               </div>
           }
-
+{/* 
           {
             params.ext === 'inventory' ?
               <div className='selected_element'>
@@ -75,7 +75,7 @@ function AttendPatient() {
                 <AssessmentIcon style={{ marginRight: '20px' }} />
                 <h3>Reports</h3>
               </div>
-          }
+          } */}
 
 
           <div className='element'>
@@ -96,3 +96,8 @@ function AttendPatient() {
 }
 
 export default AttendPatient
+
+// Doctor Name         
+// Date
+// Time
+// Status

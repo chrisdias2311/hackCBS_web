@@ -9,9 +9,11 @@ import InventoryIcon from '@mui/icons-material/Inventory';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
+import RequestPageOutlinedIcon from '@mui/icons-material/RequestPageOutlined';
 
 import { useParams, useNavigate } from 'react-router-dom';
 import Inventory from './InventoryComponent/Inventory';
+import Requests from './RequestsComponent/Requests';
 
 function PharmacyDashboard() {
     const params = useParams();
@@ -25,6 +27,9 @@ function PharmacyDashboard() {
     }
     const navigateToReports = () => {
         navigate('/pharmacydashboard/reports')
+    }
+    const navigateToRequests = () => {
+        navigate('/pharmacydashboard/requests')
     }
 
     return (
@@ -73,12 +78,20 @@ function PharmacyDashboard() {
                                 <h3>Reports</h3>
                             </div>
                     }
+                    {
+                        params.ext === 'requests' ?
+                            <div className='selected_element'>
+                                <RequestPageOutlinedIcon style={{ marginRight: '20px' }} />
+                                <h3>Requests</h3>
+                            </div>
+                            :
+                            <div onClick={navigateToRequests} className='element'>
+                                <RequestPageOutlinedIcon style={{ marginRight: '20px' }} />
+                                <h3>Requests</h3>
+                            </div>
+                    }
 
-    
-                    <div className='element'>
-                        <ToggleOnIcon style={{ marginRight: '20px' }} />
-                        <h3>Configuration</h3>
-                    </div>
+
                     <div className='element'>
                         <ExitToAppIcon style={{ marginRight: '20px' }} />
                         <h3>Sign Out</h3>
@@ -88,9 +101,13 @@ function PharmacyDashboard() {
             <div className='pharma_right_component'>
                 {
                     params.ext === 'dashboard' ?
-                    <Dashboard/>
-                    :
-                    <Inventory/>
+                        <Dashboard />
+                        :
+                        (
+                            params.ext === 'inventory' ? <Inventory /> 
+                            :
+                            <Requests/>
+                        )
                 }
                 {/* <Dashboard /> */}
             </div>

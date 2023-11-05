@@ -1,0 +1,23 @@
+.pharmacy_signup{
+    background-color: #283342;
+    height: 800px;
+    /* padding-top: 25px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.pharmacy_signup h1{
+    margin: 0px;
+}
+.signup_inner_container{
+    background-color: white;
+    height: 600px;
+    width: 500px;
+    border: 1px;
+    border-radius: 20px;
+}
+.signup_row2{
+    display: flex;
+    justify-content: center;
+}
